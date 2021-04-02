@@ -40,7 +40,7 @@ The first of those elements is a `<div>` with id `infos` and class `light`. It c
 
 The second added element is a `<div>` with id `selectors`.
 
-The third element is a  ̀ <div>` with id `view`, containing two divs.
+The third element is a `<div>` with id `view`, containing two `<divs>`.
 
 ### Create an element, with children and callback
 
