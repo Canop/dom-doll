@@ -25,6 +25,9 @@ function $() {
 					}
 				}
 			}
+		} else if (typeof arg == "function") {
+			if (nodes) nodes.forEach(arg)
+			else nodes = arg()
 		} else if (arg instanceof Element) {
 			if (nodes) nodes[0].appendChild(arg)
 			else nodes = [arg]
