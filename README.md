@@ -14,6 +14,8 @@ It makes jQuery useless in some new small projects but is neither a viable repla
 
 The doll function is designed to be used in a hierarchical and variadic way, each argument being either a CSS selector, an element, a collection of elements, some pseudo HTML for element creation, a function to apply to the previous collection, or a map of properties to change the previous element(s).
 
+When the argument is a string, it's considered as a DOM element creation descriptor if it starts with a `<`, and as a CSS selector otherwise.
+
 Here are a few introductory examples:
 
 ### Add elements to an existing one
@@ -34,7 +36,7 @@ $("#content",
 )
 ```
 
-This add 3 elements in `#content`, giving them ids and or classes or text content.
+This adds 3 elements in `#content`, giving them ids and/or classes or text content.
 
 The first of those elements is a `<div>` with id `infos` and class `light`. It contains a `<a>` element with class `big-link`.
 
@@ -51,7 +53,7 @@ let bench_name_select = $("<select.bench",
 )
 ```
 
-This create a `<select>`, with a callback for `change` events, and `<option>` elements created from a collection of names.
+This creates a `<select>`, with a callback for `change` events, and `<option>` elements created from a collection of names.
 
 ### Implementing a tab mechanism
 
